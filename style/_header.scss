@@ -8,6 +8,11 @@
     word-spacing: 2rem;
 }
 
-.text-child:hover .header-parent{
+.text-child:hover  {
     background-color: rgb(83, 133, 207);
+    transform: scale(1.1);
+}
+
+.text-child{
+    text-transform: uppercase;
 }

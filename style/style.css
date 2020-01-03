@@ -23,14 +23,19 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  z-index: 2;
 }
 
-.city-parent:hover .image {
-  opacity: 0.3;
+.image:hover {
+  opacity: 0.2;
+  -webkit-transition: .5;
+  transition: .5;
 }
 
 .city-parent:hover .box {
   opacity: 1;
+  -webkit-transition: .5;
+  transition: .5;
 }
 
 .text {
@@ -44,6 +49,7 @@
 .image {
   width: auto;
   height: 35rem;
+  z-index: 1;
 }
 
 .header-parent {
@@ -62,8 +68,14 @@
   word-spacing: 2rem;
 }
 
-.text-child:hover .header-parent {
+.text-child:hover {
   background-color: #5385cf;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.text-child {
+  text-transform: uppercase;
 }
 
 html {

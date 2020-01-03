@@ -14,14 +14,18 @@
     display: flex;
     justify-content: center;
     text-align: center;
-  }
+    z-index: 2;
+}
+
   
-  .city-parent:hover .image {
-    opacity: 0.3;
+  .image:hover {
+    opacity: 0.2;
+    transition: .5;
   }
   
   .city-parent:hover .box{
     opacity: 1;
+    transition: .5;
   }
   
   .text {
@@ -34,4 +38,5 @@
 .image{
     width: auto;
     height: 35rem;
+    z-index: 1;
 }
