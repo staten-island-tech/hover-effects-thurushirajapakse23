@@ -26,13 +26,13 @@
   z-index: 2;
 }
 
-.image:hover {
+.image :hover {
   opacity: 0.2;
   -webkit-transition: .5;
   transition: .5;
 }
 
-.city-parent:hover .box {
+.image:hover ~ .box {
   opacity: 1;
   -webkit-transition: .5;
   transition: .5;
@@ -66,16 +66,16 @@
   font-family: 'Sigmar One', cursive;
   letter-spacing: 1rem;
   word-spacing: 2rem;
+  margin: 2rem;
 }
 
 .text-child:hover {
   background-color: #5385cf;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-.text-child {
   text-transform: uppercase;
+  -webkit-transition: .5;
+  transition: .5;
 }
 
 html {
