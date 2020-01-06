@@ -13,5 +13,9 @@ html{
 body{
     background-color: rgb(67, 110, 173);
 }
-
-
+.top-parent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
