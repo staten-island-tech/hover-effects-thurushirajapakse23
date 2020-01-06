@@ -1,0 +1,42 @@
+
+.views{
+    height: 21rem;
+    position: absolute;
+    transform: all 0.3s;
+}
+.views-parent{
+    width: 65rem;
+    height: 45rem;
+}
+
+.views-gallery{
+    position: relative;
+    margin: 2rem;
+}
+.sunset{
+    top: 5rem;
+    left: 61%;
+    z-index: 1;
+}
+.square{
+    top: 9rem;
+    left: 66rem;
+    z-index: 3;
+}
+.trade{
+    top: 21rem;
+    left: 48rem;
+    z-index: 2;
+}
+
+.views:hover{
+    transform: scale(1.1);
+    outline: .5rem solid black;
+    z-index: 4;
+    outline-offset: .7rem;
+}
+
+.views-gallery:hover .views:not(:hover){
+    transform: scale(.8);
+    opacity: 0.5;
+}
