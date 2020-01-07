@@ -96,20 +96,19 @@
 }
 
 .sunset {
-  top: 5rem;
-  left: 61%;
   z-index: 1;
+  top: 3rem;
 }
 
 .square {
-  top: 9rem;
-  left: 66rem;
+  top: 8rem;
+  left: 28rem;
   z-index: 3;
 }
 
 .trade {
-  top: 21rem;
-  left: 48rem;
+  top: 19rem;
+  left: 8rem;
   z-index: 2;
 }
 
@@ -143,8 +142,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
