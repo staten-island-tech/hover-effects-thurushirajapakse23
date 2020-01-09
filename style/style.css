@@ -46,17 +46,17 @@
 }
 
 .header-parent {
+  font-size: 7rem;
+  font-family: 'Sigmar One', cursive;
+  letter-spacing: 1rem;
+  word-spacing: 2rem;
+  margin: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 7rem;
-  font-family: 'Sigmar One', cursive;
-  letter-spacing: 1rem;
-  word-spacing: 2rem;
-  margin: 2rem;
 }
 
 .text-child:hover {
@@ -117,7 +117,6 @@
 }
 
 .btn {
-  cursor: pointer;
   position: relative;
   padding: 10px 20px;
   background: #b377b1;
@@ -170,6 +169,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 2rem;
 }
 
 .taxi-image {
@@ -183,17 +183,32 @@
           transform: translate(150rem, 0);
 }
 
+.taxi-image:hover {
+  -webkit-filter: hue-rotate(edge 12);
+          filter: hue-rotate(edge 12);
+}
+
+.road-parent {
+  margin: -4;
+}
+
+.road-image {
+  height: 2rem;
+  width: 145rem;
+}
+
 html {
   padding: 0;
   margin: 0;
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  cursor: pointer;
 }
 
 body {
   background-color: #436ead;
-  overflow: hidden;
+  /*     overflow: hidden;  */
 }
 
 .top-parent {
