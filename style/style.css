@@ -11,7 +11,7 @@
           align-items: center;
 }
 
-.box {
+.city-box {
   -webkit-transition: .5s;
   transition: .5s;
   opacity: 0;
@@ -19,19 +19,19 @@
   z-index: 2;
 }
 
-.image :hover {
+.city-image :hover {
   opacity: 0.2;
   -webkit-transition: .5;
   transition: .5;
 }
 
-.image:hover ~ .box {
+.city-image:hover ~ .city-box {
   opacity: 1;
   -webkit-transition: .5;
   transition: .5;
 }
 
-.text {
+.city-text {
   background-color: #eb93b8;
   color: white;
   font-size: 16px;
@@ -39,7 +39,7 @@
   font-family: 'Bowlby One', cursive;
 }
 
-.image {
+.city-image {
   width: auto;
   height: 35rem;
   z-index: 1;
@@ -59,7 +59,7 @@
           justify-content: center;
 }
 
-.text-child:hover {
+.header-child:hover {
   background-color: #5385cf;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -162,7 +162,7 @@
   height: 100%;
 }
 
-.data-container {
+.btn-parent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,8 +179,8 @@
 .taxi-parent:hover {
   -webkit-transition: 4s;
   transition: 4s;
-  -webkit-transform: translate(150rem, 0);
-          transform: translate(150rem, 0);
+  -webkit-transform: translate(80%, 0);
+          transform: translate(80%, 0);
 }
 
 .taxi-image:hover {
@@ -194,7 +194,7 @@
 
 .road-image {
   height: 2rem;
-  width: 145rem;
+  width: 100%;
 }
 
 html {
@@ -203,12 +203,11 @@ html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  cursor: pointer;
 }
 
 body {
   background-color: #436ead;
-  /*     overflow: hidden;  */
+  overflow: hidden;
 }
 
 .top-parent {

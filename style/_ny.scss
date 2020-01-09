@@ -6,24 +6,24 @@
     align-items: center;
 }
 
-.box {
+.city-box {
     transition: .5s ;
     opacity: 0;
     position: absolute;
     z-index: 2;
 }
  
-  .image :hover {
+  .city-image :hover {
     opacity: 0.2;
     transition: .5;
   }
   
-  .image:hover ~ .box{
+  .city-image:hover ~ .city-box{
     opacity: 1;
     transition: .5;
   }
   
-  .text {
+  .city-text {
     background-color: rgb(235, 147, 184);
     color: white;
     font-size: 16px;
@@ -31,7 +31,7 @@
     font-family: 'Bowlby One', cursive;
   }
   
-.image{
+.city-image{
     width: auto;
     height: 35rem;
     z-index: 1;
