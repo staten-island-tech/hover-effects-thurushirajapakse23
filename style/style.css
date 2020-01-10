@@ -267,7 +267,7 @@ html {
 
 body {
   background-color: #436ead;
-  /*    overflow: hidden; */
+  overflow: hidden;
 }
 
 .top-parent {
