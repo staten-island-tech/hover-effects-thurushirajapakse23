@@ -46,17 +46,17 @@
 }
 
 .header-parent {
-  font-size: 7rem;
-  font-family: 'Sigmar One', cursive;
-  letter-spacing: 1rem;
-  word-spacing: 2rem;
-  margin: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 7rem;
+  font-family: 'Sigmar One', cursive;
+  letter-spacing: 1rem;
+  word-spacing: 2rem;
+  margin: 2rem;
 }
 
 .header-child:hover {
@@ -120,12 +120,13 @@
   position: relative;
   padding: 10px 20px;
   background: #b377b1;
+  font-family: 'Sigmar One', cursive;
   font-size: 28px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   -webkit-transition: all 1s;
   transition: all 1s;
-  width: 18rem;
+  width: 25rem;
 }
 
 .btn:after, .btn:before {
@@ -183,11 +184,6 @@
           transform: translate(80%, 0);
 }
 
-.taxi-image:hover {
-  -webkit-filter: hue-rotate(edge 12);
-          filter: hue-rotate(edge 12);
-}
-
 .road-parent {
   margin: -4;
 }
@@ -195,6 +191,70 @@
 .road-image {
   height: 2rem;
   width: 100%;
+}
+
+.change-child {
+  height: 250px;
+  width: 250px;
+  margin: 0 auto;
+  background-color: #d277e9;
+  -webkit-animation-name: stretch;
+          animation-name: stretch;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@-webkit-keyframes stretch {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    background-color: #00a2ff;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: #a13de4;
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    background-color: #312286;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    background-color: #00a2ff;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: #a13de4;
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    background-color: #312286;
+  }
+}
+
+.change-parent:hover ~ .change-child {
+  -webkit-transition: .5;
+  transition: .5;
+  -webkit-transform: translate(50rem, 0);
+          transform: translate(50rem, 0);
 }
 
 html {
@@ -207,7 +267,7 @@ html {
 
 body {
   background-color: #436ead;
-  overflow: hidden;
+  /*    overflow: hidden; */
 }
 
 .top-parent {

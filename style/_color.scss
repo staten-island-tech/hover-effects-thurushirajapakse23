@@ -1,0 +1,36 @@
+
+
+.change-child {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    background-color: rgb(210, 119, 233);
+    animation-name: stretch;
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+  
+  @keyframes stretch {
+    0% {
+      transform: scale(.2);
+      background-color: rgb(0, 162, 255);
+      border-radius: 100%;
+    }
+    50% {
+      background-color: rgb(161, 61, 228);
+    }
+    100% {
+      transform: scale(.8);
+      background-color: rgb(49, 34, 134);
+    }
+  }
+ 
+  .change-parent:hover ~ .change-child{
+      transition: .5;
+      transform: translate(50rem, 0);
+  }

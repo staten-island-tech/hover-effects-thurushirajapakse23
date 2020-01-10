@@ -3,11 +3,12 @@
         position:relative;
         padding:10px 20px;
         background:rgb(179, 119, 177);
+        font-family: 'Sigmar One', cursive;
         font-size:28px;
         border-top-right-radius:10px;
         border-bottom-left-radius:10px;
         transition:all 1s;
-        width: 18rem;
+        width: 25rem;
         &:after,&:before{
             content:" ";
             width:10px;
